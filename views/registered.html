@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/neptune-title-icon.png" type="image/x-icon">
+    <title>Successfully Registered Your Name</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <center>
+        <h4 class="text-success mt-2"><b> <span id="name"></span> you're successfully registered !</b></h4>
+        <div class="form-group">
+            <h5 id="your_name"></h5>
+            <h5 id="your_email"></h5>
+        </div>
+        <h4>Choose below options</h4>
+        <hr style="width: 50%;">
+        <button class="btn btn-primary" onclick="addToCalender();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
+                <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              </svg>
+            Add to calender
+        </button>
+        <a class="btn" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnRnbTJkcHA2ZGhtNmI5aGNncmowYjlrYzRzbWNiOW82MWltY2JiNGNvcmo0cGhoNmRnbTJkOWdjayBweXRob25jb2RlcjEzQG0&amp;tmsrc=pythoncoder13%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en-GB.gif"></a>
+        <button class="btn btn-outline-primary" onclick="direct();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+              </svg>
+            Direct meet
+        </button>
+        <button class="btn btn-danger" onclick="logout();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+              </svg>
+            Logout
+        </button>
+        <hr style="width: 50%;">
+        <h4>Details</h4>
+        <p>Neptune's App Meeting</p>
+        <p style="margin-top: -15px;">Wednesday, 18 August · 2:00 – 3:00pm</p>
+        <p><b>Host by GYANAM</b></p>
+        <img src="../img/neptune-title-icon.png" alt="Neptune's logo">
+    </center>
+
+    <script>
+        user = localStorage.getItem("username");
+        email = localStorage.getItem("email");
+        document.getElementById("name").innerHTML = user;
+        document.getElementById("your_name").innerHTML = "Name: " + user;
+        document.getElementById("your_email").innerHTML = "Email: " + email;
+
+        function addToCalender() {
+            window.open("https://calendar.google.com/event?action=TEMPLATE&tmeid=NnRnbTJkcHA2ZGhtNmI5aGNncmowYjlrYzRzbWNiOW82MWltY2JiNGNvcmo0cGhoNmRnbTJkOWdjayBweXRob25jb2RlcjEzQG0&tmsrc=pythoncoder13%40gmail.com");
+        }
+
+        function direct() {
+            window.open("https://meet.google.com/ymb-rcpn-vte");
+        }
+
+        function logout() {
+            window.location = "../index.html";
+        }
+    </script>
+</body>
+
+</html>
